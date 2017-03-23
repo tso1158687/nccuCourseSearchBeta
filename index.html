@@ -12,6 +12,7 @@
     new WOW().init();
     </script>
     <link rel="stylesheet" href="styles/animate.min.css">
+    <link rel="stylesheet" href="styles/font-awsome/css/font-awesome.min.css">
     <script src="js/angular.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/app-jq.js"></script>
@@ -19,10 +20,10 @@
 </head>
 
 <body ng-controller="CourseSearchController as search">
-    <div class="section">
+    <section>
         <div class="container nopadding">
             <div class="row">
-                <div class="col-md-12 main text-center wow bounceIn" id="cover">
+                <div class="col-md-12 main text-center nopadding wow bounceIn" id="cover">
                     <div class="">
                         <h1>課程查詢</h1>
                         <label for="">搜尋課程</label>
@@ -31,8 +32,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="section">
+    </section>
+    <section>
         <div class="container">
             <div class="row"></div>
             <div class="col-md-12">
@@ -58,7 +59,18 @@
                 </table>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="author">
+        <div class="containter">
+            <div class="row">
+                <footer class="col-xs-12 text-center">
+                    jason Zheng 製作
+                    <br>
+                    <br><a href="https://www.facebook.com/junyou.zheng"><i class="fa fa-facebook-square fa-2x wow bounceIn" data-wow-delay=".1s" aria-hidden="true"></i></a>
+                </footer>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
