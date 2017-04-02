@@ -4,6 +4,16 @@
     angular.module("NccuCourseSearch", [])
         .controller("CourseSearchController", CourseSearchController)
         .service("CourseSearchService", CourseSearchService)
+    //     .directive("courseResult", CourseResult)
+
+    // function CourseResult() {
+    //     var ddo = {
+    //         templateUrl: 'courseresult.html'
+    //     };
+
+    //     return ddo;
+
+    // }
 
     CourseSearchController.$inject = ["CourseSearchService"];
 

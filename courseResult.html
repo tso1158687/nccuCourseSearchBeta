@@ -1,0 +1,20 @@
+<table ng-if="search.showcase" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <td>課程名稱</td>
+            <td>授課教師</td>
+            <td>星期</td>
+            <td>時間</td>
+            <td>教室</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="course in search.courses |filter:search.input">
+            <td>{{ course.name }}</td>
+            <td>{{ course.teacher }}</td>
+            <td>{{ course.day }}</td>
+            <td>{{ course.time }}</td>
+            <td>{{course.place}}</td>
+        </tr>
+    </tbody>
+</table>
