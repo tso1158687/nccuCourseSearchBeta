@@ -86,6 +86,24 @@
     background-color: black;
     display: none;
 }
+#courseDetail h3{
+    padding: 20px 0;
+    background-color: #31b0d5;
+    color: white;
+}
+#courseDetail .content{
+    border-radius: 10px;
+}
+#courseDetail .content>div{
+    position: relative;
+}
+#courseDetail .content>div:first-child{
+    height: 100%;
+}
+#courseDetail .content>div:last-child{
+    background-color: #31b0d5;
+    
+}
 /*.switch{
     display: none;
     transition: all 3s;
@@ -103,7 +121,7 @@
 
 #courseDetail .content {
     width: 80%;
-    height: 80%;
+    height: 70%;
     position: relative;
     top: 50%;
     left: 50%;

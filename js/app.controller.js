@@ -29,6 +29,11 @@
         }
         search.delete = function() {
             search.inputex = "";
+            search.input = "";
+            search.input2 = "";
+            search.input3 = "";
+            search.input4 = "";
+            search.input5 = "";
         }
         search.index = function($index) {
             console.log(search.courses[$index]);
