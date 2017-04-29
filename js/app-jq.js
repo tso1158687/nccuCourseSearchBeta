@@ -1,8 +1,13 @@
 $(document).ready(function() {
-    var $input = $("#searchInput");
+    var $input = $("#searchInput").find("input");
     $input.focus(function() {
-        $input.parent().parent()
-        .removeClass("main")
-        .addClass("main2")
+        $input.parent().parent().parent().parent()
+            .removeClass("main")
+            .addClass("main2")
     })
+    var $courseMask = $("#courseDetail").find(".mask");
+    var $course = $("#courseDetail");
+    $courseMask.click(function() {
+        $course.fadeOut(500);
+    });
 });
