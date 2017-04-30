@@ -1,4 +1,4 @@
-<div class="table-responsive">
+<div class="table-responsive wow fadeIn" id="resultTable">
     <table class="table table-striped table-bordered">
         <thead>
             <tr>
@@ -11,15 +11,16 @@
             </tr>
         </thead>
         <tbody id="courseResult">
-            <tr ng-repeat="course in search.courses |filter:search.input |filter:search.input2 |filter:search.input3 |filter:search.input4 |filter:search.input5">
+            <tr ng-repeat="course in search.courses |filter:search.input |filter:search.input2 |filter:search.input3 |filter:search.input4 |filter:search.input5 |filter:search.input5">
                 <td>{{ course.name }}</td>
                 <td>{{ course.teacher }}</td>
                 <td>{{ course.day }}</td>
                 <td>{{ course.time }}</td>
                 <td>{{course.classroom}}</td>
                 <td>
-                    <button ng-click="search.index($index)" type="button" class="btn btn-info">詳細資料</button>
+                    <button ng-click="search.index(course.no)" type="button" class="btn btn-info">詳細資料</button>
                 </td>
+                <td class="title">{{course.title}}</td>
             </tr>
         </tbody>
     </table>
@@ -28,7 +29,53 @@
     <div class="mask"></div>
     <div class="content">
         <div>
-            <h3 class="text-center">{{search.detail.name}}</h3>{{search.detail.remark}}
+            <h3 class="text-center">{{search.detail.name}}</h3>
+            <table class="table table-striped table-bordered">
+                <tbody>
+                    <tr>
+                        <td>授課教師</td>
+                        <td>{{search.detail.teacher}}</td>
+                    </tr>
+                    <tr>
+                        <td>星期</td>
+                        <td>{{search.detail.day}}</td>
+                    </tr>
+                    <tr>
+                        <td>時間</td>
+                        <td>{{search.detail.time}}</td>
+                    </tr>
+                    <tr>
+                        <td>教室</td>
+                        <td>{{search.detail.classroom}}</td>
+                    </tr>
+                    <tr>
+                        <td>開課單位</td>
+                        <td>{{search.detail.department}}</td>
+                    </tr>
+                    <tr>
+                        <td>語言</td>
+                        <td>{{search.detail.language}}</td>
+                    </tr>
+                    <tr>
+                        <td>學分</td>
+                        <td>{{search.detail.credit}}</td>
+                    </tr>
+                    <tr>
+                        <td>必選修</td>
+                        <td>{{search.detail.required}}</td>
+                    </tr>
+                    <tr>
+                        <td>課程別</td>
+                        <td>{{search.detail.category}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">備註</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">{{search.detail.remark}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div>
             <button>看完囉~</button>
