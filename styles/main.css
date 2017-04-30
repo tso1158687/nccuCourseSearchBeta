@@ -141,6 +141,10 @@
 #resultTable{
     margin-top: 40px;
 }
+#about span {
+    padding-left: 10px;
+}
+
 /*.switch{
     display: none;
     transition: all 3s;
