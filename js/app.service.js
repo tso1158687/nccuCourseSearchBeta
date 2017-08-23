@@ -1681,11 +1681,7 @@
             { "no": 1668, "title": "數位內容學程", "way": "", "zhiyuan": "", "language": "Y 中文", "department": "數位學程", "id": "781033-00-1", "name": "互動裝置設計", "category": "學期課", "required": "群", "credit": 3, "teacher": "張博智", "day": "五", "time": "D56", "classroom": "大勇210315", "quantity": 46, "remark": "" },
             { "no": 1669, "title": "數位內容學程", "way": "", "zhiyuan": "", "language": "Y 中文", "department": "數位學程", "id": "781943-00-1", "name": "互動聲音設計", "category": "學期課", "required": "選", "credit": 3, "teacher": "張永達", "day": "四", "time": "D56", "classroom": "藝文370218", "quantity": 26, "remark": "" }
         ]
-        // var a = function() {
-        //     console.log(courses);
-        //     console.log(courses.interest)
-        // }
-        // a();
+
 
 
     }

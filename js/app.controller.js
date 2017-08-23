@@ -19,9 +19,7 @@
         search.input6 = ""
         search.detail = "";
         search.courses = CourseSearchService.getCourses();
-        // search.courses2 = search.courses;
         search.click = function() {
-            console.log(search.inputex2);
             search.inputex2 = search.inputex.split(" ");
             search.input = search.inputex2[0];
             search.input2 = search.inputex2[1];
@@ -38,19 +36,12 @@
             search.input4 = "";
             search.input5 = "";
         }
-        search.index = function($index) {
-            // console.log($index);
-            // console.log(search.courses);
-            // console.log(search.courses[$index]);
-            // console.log(search.courses2[$index]);
+        search.index = function($index) {            
             if ($index < 750) {
                 search.detail = search.courses[$index];
             } else if ($index > 751) {
                 search.detail = search.courses[$index - 3];
-                // console.log("-3");
             }
-
-            // console.log(search.detail);
             angular.element(document).find('#courseDetail').fadeIn(500);
 
         }
