@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="course in search.courses |filter:search.input">
+        <tr ng-repeat="course in search.courses |filter:search.input | limitTo:5">
             <td>{{ course.name }}</td>
             <td>{{ course.teacher }}</td>
             <td>{{ course.day }}</td>
